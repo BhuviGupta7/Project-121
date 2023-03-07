@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Fredoka&family=Lato:wght@300;400&family=Lobster&family=Oleo+Script+Swash+Caps&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Fredoka&family=Lato:wght@300;400&family=Lobster&family=Oleo+Script+Swash+Caps&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Google Lens vs Mobile Net</title>
+</head>
+<body>
+    <center>
+    <h1 class="header">GOOGLE LENS VS MOBILENET</h1>
+    <hr>
+    <br>
+    <br>
+    <h3> Google Lens <span><img src="Google Lens.jpeg" id="lens" height="60px" width="60px"></span></h3>
+    <br>
+    <h4>VS</h4>
+    <br>
+    <h3 class="btn btn-primary" id="MbBtn" >MobileNet</h3>
+    <br>
+    <br>
+    </center>
+    <br>
+    <br>
+
+    <ol>
+        
+        <div class="HarryPotter_image col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Harry Potter and the Goblet of Fire Book Image: </b>
+                <br><br>
+                <img src="Harry Potter.jpg" height="280px" width="200px" class="img-responsive">
+            </li>
+            <h5 class="col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b>: Harry Potter and the Goblet of Fire
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output on <b>Mobilenet </b>: Book Jacket
+                    <span></span>
+            </h5>
+            <br><br><br><br>
+            <div class="mini_div">
+                <center>  
+                    <h4 id="r_res">Result: Google Lens is more accurate.</h4>
+                </center>
+                <hr>
+                <h4></h4>
+            </div>
+        
+        <div class="color_image col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Water Color Image: </b>
+                <br><br>
+                <img src="watercolors.jpg" height="280px" width="200px" class="img-responsive">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b>: Meiliang Water Color Paint Set
+                    <span></span>
+            </h5>
+            
+            <h5 class="col-sm-4 col-xs-12">
+                Output on <b>Mobilenet </b>: Remote Control
+                    <span></span>
+            </h5>
+
+            <br><br><br><br>
+
+            <div class="mini_div">
+                <center>  
+                    <h4 id="r_res">Result: Google Lens is more accurate.</h4>
+                </center>
+                <hr>
+                <h4></h4>
+            </div>
+        </div>
+
+
+        <div class="alarm_image col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Alarm Clock Image: </b>
+                <br><br>
+                <img src="Alarm Clock.jpg" height="280px" width="200px" class="img-responsive">
+            </li>
+            <h5 class="col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b>: Alarm Clock Violet
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output on <b>Mobilenet </b>: Analog Clock
+                    <span></span>
+            </h5>
+            <br><br><br><br>
+            <div class="mini_div">
+                <center>  
+                    <h4 id="r_res">Result: Google Lens is more accurate.</h4>
+                </center>
+                <hr>
+                <h4></h4>
+            </div>
+
+
+            <div class="waterbottle_image col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Water Bottle Image: </b>
+                    <br><br>
+                    <img src="Water Bottle.webp" height="280px" width="200px" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Google Lens</b>: BTS Sipper Bottle
+                        <span></span>
+                </h5>
+                
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet </b>: Water Bottle
+                        <span></span>
+                </h5>
+                <br><br><br><br>
+                <div class="mini_div">
+                    <center>  
+                        <h4 id="r_res">Result: Google Lens is more accurate.</h4>
+                    </center>
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <div class="headphone _image col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Headphone Image: </b>
+                    <br><br>
+                    <img src="headphone.jpeg" height="280px" width="200px" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Google Lens</b>: Energy System Style 3  Computer Headset
+                        <span></span>
+                </h5>
+                
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet </b>: Computer Mouse
+                </h5>
+                <br><br><br><br>
+                <div class="mini_div">
+                    <center>  
+                        <h4 id="r_res">Result: Google Lens is more accurate.</h4>
+                    </center>
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <div class="notebook_image col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Notebook Image: </b>
+                    <br><br>
+                    <img src="Notebook.jpg" height="280px" width="200px" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Google Lens</b>: BTS Spiral Notebook
+                        <span></span>
+                </h5>
+                
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet </b>: Pocketbook
+                        <span></span>
+                </h5>
+                <br><br><br><br>
+                <div class="mini_div">
+                    <center>  
+                        <h4 id="r_res">Result: Google Lens is more accurate.</h4>
+                    </center>
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+
+            <div class="UNO_image col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>UNO Flip Image: </b>
+                    <br><br>
+                    <img src="UNO Flip.jpeg" height="280px" width="200px" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Google Lens</b>: Mattel UNO Flip
+    
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet </b>: Lighter
+                        <span></span>
+                </h5>
+                <br><br><br><br>
+                <div class="mini_div">
+                    <center>  
+                        <h4 id="r_res">Result: Google Lens is more accurate.</h4>
+                    </center>
+                    <hr>
+                    <h4></h4>
+                </div>
+
+                <div class="balloons_image col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Balloon Image: </b>
+                        <br><br>
+                        <img src="Balloons.jpg" height="280px" width="200px" class="img-responsive">
+                    </li>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on <b>Google Lens</b>: HKBalloons 9 Inches Assorted Color Party Balloons 50 Pcs
+        
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on <b>Mobilenet </b>: Balloon
+                            <span></span>
+                    </h5>
+                    <br><br><br><br>
+                    <div class="mini_div">
+                        <center>  
+                            <h4 id="r_res">Result: Google Lens is more accurate.</h4>
+                        </center>
+                        <hr>
+                        <h4></h4>
+                    </div>
+
+                    <div class="Keyboard_image col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Keyboard Image: </b>
+                        <br><br>
+                        <img src="Keyboard.jpeg" height="280px" width="200px" class="img-responsive">
+                    </li>
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on <b>Google Lens</b>: Computer Keyboard
+        
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on <b>Mobilenet </b>: Notebook Computer
+                            <span></span>
+                    </h5>
+                    <br><br><br><br>
+                    <div class="mini_div">
+                        <center>  
+                            <h4 id="r_res">Result: Google Lens is more accurate.</h4>
+                        </center>
+                        <hr>
+                        <h4></h4>
+                    </div>
+
+                </ol>
+                   <p> I have tested 9 images
+                    GOOGLE LENS have predicted 9/9 of them accurately.
+                    So according to my case study GOOGLE LENS is more Accurate</p>
+
+
+
+    <br><br><br><br><br><br>
+    
+    <center><h4></h4>
+    </center>
+</body>
+</html>
